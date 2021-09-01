@@ -8,7 +8,7 @@ import org.springframework.data.repository.CrudRepository;
 public interface PersonRepository extends CrudRepository<Person, Integer> {
 
   //=======================================================================================
-  // RETURN PERSON DTO
+  // RETURN PERSON VIEW
   //=======================================================================================
   @Query(
     value       = "SELECT name, age FROM PERSON WHERE NAME = 'John' AND AGE = 20",
