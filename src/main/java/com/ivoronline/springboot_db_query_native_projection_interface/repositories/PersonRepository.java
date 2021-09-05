@@ -10,10 +10,7 @@ public interface PersonRepository extends CrudRepository<Person, Integer> {
   //=======================================================================================
   // RETURN PERSON VIEW
   //=======================================================================================
-  @Query(
-    value       = "SELECT name, age FROM PERSON WHERE NAME = 'John' AND AGE = 20",
-    nativeQuery = true
-  )
+  @Query(nativeQuery = true, value = "SELECT * FROM PERSON WHERE NAME = 'John'")
   PersonView returnPersonView();
 
 }
