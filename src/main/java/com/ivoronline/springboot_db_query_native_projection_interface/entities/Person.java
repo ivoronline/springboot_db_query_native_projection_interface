@@ -15,4 +15,11 @@ public class Person {
   public String  name;
   public Integer age;
 
+  //CONSTRUCTORS
+  public Person() { }                               //Forced by @Entity
+  public Person(String name, Integer age) {         //To simplify PersonLoader
+    this.name = name;
+    this.age  = age;
+  }
+
 }
