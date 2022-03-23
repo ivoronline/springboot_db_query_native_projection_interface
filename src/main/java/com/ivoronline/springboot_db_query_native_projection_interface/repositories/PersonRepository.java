@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface PersonRepository extends CrudRepository<Person, Integer> {
 
-  //=======================================================================================
+  //========================================================================================
   // RETURN PERSON PROJECTION
   //=======================================================================================
   @Query(value = "SELECT name, age FROM PERSON WHERE NAME = :name", nativeQuery = true)
