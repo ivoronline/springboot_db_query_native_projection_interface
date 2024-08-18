@@ -1,6 +1,6 @@
 package com.ivoronline.dto;
 
-public interface PersonDTO {
+public interface IPersonDTO {
 
   //GETTERS
   String getName();
