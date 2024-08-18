@@ -18,8 +18,8 @@ public class MyController {
   //================================================================
   @RequestMapping("GetPersonDTO")
   IPersonDTO getPersonDTO() {
-    IPersonDTO IPersonDTO = utilityRepository.getPersonDTO("Bill");
-    return IPersonDTO;
+    IPersonDTO personDTO  = utilityRepository.getPersonDTO("Bill");
+    return personDTO ;
   }
 
   //================================================================
@@ -27,8 +27,8 @@ public class MyController {
   //================================================================
   @RequestMapping("GetPersonDTOList")
   List<IPersonDTO> getPersonDTOList() {
-    List<IPersonDTO> IPersonDTOS = utilityRepository.getPersonDTOList("John");
-    return IPersonDTOS;
+    List<IPersonDTO> personDTOList  = utilityRepository.getPersonDTOList("John");
+    return personDTOList ;
   }
 
 }
